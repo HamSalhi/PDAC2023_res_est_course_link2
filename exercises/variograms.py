@@ -81,8 +81,8 @@ def variograms():
   df = pd.DataFrame(data=results, 
                     columns=['Example', 'Structure Type', 'Nugget', 'Range'])
   uname = getpass.getuser()
-  # st.table(df)
-  st.dataframe(df)
+  st.table(df)
+
   
 
   
