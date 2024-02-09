@@ -94,10 +94,10 @@ def block_modelling():
     # scol1, scol2 = st.beta_columns((1, 1))
     # with scol1:
     st.markdown('#### Ellipse Shape')
-    rot = st.number_input('Pick a Rotation (-360 to 360)', min_value=-360., max_value=360., value=0., step=5.)
+    rot = st.number_input('Pick a Rotation (-360 to 360)', min_value=-360., max_value=360., value=0., step=5.,key=1)
     rot = (360. - rot)
-    srange_major = st.number_input('Major Axis Range', min_value=10., max_value=500., value=100., step=5.)
-    srange_minor = st.number_input('Semi-Major Axis Range', min_value=10., max_value=500., value=100., step=5.)
+    srange_major = st.number_input('Major Axis Range', min_value=10., max_value=500., value=100., step=5.,key=2)
+    srange_minor = st.number_input('Semi-Major Axis Range', min_value=10., max_value=500., value=100., step=5.,key=3)
     # with scol2:
     #     st.markdown('#### Sample Selection')
     #     min_samps = st.number_input("Minimum Samples", min_value=1, max_value=40, value=2, step=1)
